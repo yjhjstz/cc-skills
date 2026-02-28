@@ -19,7 +19,7 @@ sudo apt install glab       # Debian/Ubuntu
 
 ```bash
 # Self-hosted GitLab
-glab auth login --hostname code.hashdata.xyz --token <your-token>
+glab auth login --hostname <your-gitlab-host> --token <your-token>
 
 # gitlab.com
 glab auth login --token <your-token>
@@ -27,6 +27,16 @@ glab auth login --token <your-token>
 
 Token needs at least `api` scope. Generate at:
 `https://<your-gitlab-host>/-/user_settings/personal_access_tokens`
+
+**Proxy settings** — if you use an HTTP proxy, add your internal GitLab host to `NO_PROXY` so it is accessed directly:
+
+```bash
+export HTTP_PROXY="http://127.0.0.1:1080"
+export HTTPS_PROXY="http://127.0.0.1:1080"
+export NO_PROXY="<your-gitlab-host>,localhost,127.0.0.1"
+```
+
+Add these lines to `~/.bashrc` or `~/.zshrc` to make them permanent.
 
 **Run from** a git directory with a GitLab remote.
 
