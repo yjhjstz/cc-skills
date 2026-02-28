@@ -1,26 +1,40 @@
 # cc-skills
 
-Custom Claude Code plugin marketplace with developer workflow skills.
+Custom [Claude Code](https://claude.ai/code) plugin marketplace with developer workflow skills.
 
-## Add This Marketplace
+## Installation
+
+**Step 1 — Add this marketplace:**
 
 ```
 /plugin marketplace add https://github.com/yjhjstz/cc-skills
+```
+
+**Step 2 — Install the plugin:**
+
+```
+/plugin install gitlab-skills@cc-skills
 ```
 
 ## Available Plugins
 
 ### `gitlab-skills`
 
-GitLab CI/CD and MR workflow commands via the `glab` CLI.
+GitLab workflow slash commands powered by the [`glab`](https://gitlab.com/gitlab-org/cli) CLI.
 
-```
-/plugin install gitlab-skills@cc-skills
-```
+**Prerequisites:** `glab` installed and authenticated (`glab auth login`), run from a git repo with a GitLab remote.
 
-See [plugins/gitlab-skills/README.md](plugins/gitlab-skills/README.md) for full documentation.
+| Command | Arguments | Description |
+|---|---|---|
+| `/gitlab-ci` | `[branch \| status]` | List recent CI/CD pipelines |
+| `/gitlab-ci-log` | `<pipeline-iid>` | Show failed job logs and analyze errors |
+| `/gitlab-ci-run` | `[branch]` | Trigger a new pipeline run |
+| `/gitlab-mr-list` | `[@me \| closed \| label:<n> \| ...]` | List merge requests with filters |
+| `/gitlab-mr-comments` | `<mr-iid>` | View and summarize MR discussions |
+| `/gitlab-review-mr` | `<mr-iid>` | Full code review of a merge request |
+| `/gitlab-fix-issue` | `<issue-number>` | Read issue, implement fix, open MR |
 
-## Structure
+## Repository Structure
 
 ```
 cc-skills/
@@ -31,7 +45,7 @@ cc-skills/
 │       ├── .claude-plugin/
 │       │   └── plugin.json     # Plugin manifest
 │       ├── README.md
-│       └── commands/           # User-invocable slash commands
+│       └── commands/           # Slash commands
 │           ├── gitlab-ci.md
 │           ├── gitlab-ci-log.md
 │           ├── gitlab-ci-run.md
