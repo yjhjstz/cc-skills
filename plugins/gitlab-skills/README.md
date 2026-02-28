@@ -4,9 +4,31 @@ GitLab workflow commands for Claude Code, powered by the [`glab`](https://gitlab
 
 ## Prerequisites
 
-- `glab` installed (e.g. `brew install glab`)
-- Authenticated: `glab auth login`
-- Run from a git directory with a GitLab remote
+**Install glab:**
+
+```bash
+# macOS
+brew install glab
+
+# Linux
+sudo apt install glab       # Debian/Ubuntu
+# or download from https://gitlab.com/gitlab-org/cli/-/releases
+```
+
+**Authenticate** (replace `<your-token>` with a GitLab personal access token):
+
+```bash
+# Self-hosted GitLab
+glab auth login --hostname code.hashdata.xyz --token <your-token>
+
+# gitlab.com
+glab auth login --token <your-token>
+```
+
+Token needs at least `api` scope. Generate at:
+`https://<your-gitlab-host>/-/user_settings/personal_access_tokens`
+
+**Run from** a git directory with a GitLab remote.
 
 ## Commands
 
