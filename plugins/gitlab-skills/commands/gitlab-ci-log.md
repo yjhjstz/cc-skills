@@ -8,7 +8,7 @@ View failed job logs for a GitLab CI/CD pipeline and analyze the failure.
 
 Argument: $ARGUMENTS (required - pipeline IID, e.g. `6954`)
 
-Use `/opt/homebrew/bin/glab` CLI and `jq`. Must run from a git directory with GitLab remote.
+Use `glab` CLI and `jq`. Must run from a git directory with GitLab remote.
 
 ## Steps
 
