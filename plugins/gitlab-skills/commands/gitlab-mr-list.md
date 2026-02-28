@@ -1,6 +1,6 @@
 ---
 description: List GitLab merge requests with optional filtering by author, status, label, or branch
-argument-hint: [@me | closed | merged | draft | label:<name> | branch:<name> | <search-text>]
+argument-hint: "[@me | closed | merged | draft | label:<name> | branch:<name> | <search-text>]"
 allowed-tools: Bash
 ---
 

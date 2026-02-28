@@ -1,6 +1,6 @@
 ---
 description: View GitLab CI/CD pipeline list for the current repository
-argument-hint: [branch-name | failed | success | running | pending | canceled]
+argument-hint: "[branch-name | failed | success | running | pending | canceled]"
 allowed-tools: Bash
 ---
 
