@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "cc-skills",
+  "description": "Custom skills collection for developer workflows, featuring GitLab CI/CD and MR management via glab CLI",
+  "owner": {
+    "name": "yjhjstz",
+    "url": "https://github.com/yjhjstz"
+  },
+  "plugins": [
+    {
+      "name": "gitlab-skills",
+      "description": "GitLab workflow commands: browse and trigger CI/CD pipelines, list and review merge requests, view MR discussions, and fix issues — all via the glab CLI",
+      "category": "productivity",
+      "source": "./plugins/gitlab-skills",
+      "homepage": "https://github.com/yjhjstz/cc-skills/tree/main/plugins/gitlab-skills",
+      "tags": ["gitlab", "ci-cd", "merge-request", "devops"]
+    }
+  ]
+}

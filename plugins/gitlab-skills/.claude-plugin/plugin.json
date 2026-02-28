@@ -1,0 +1,8 @@
+{
+  "name": "gitlab-skills",
+  "description": "GitLab workflow commands for managing CI/CD pipelines, merge requests, and issues via the glab CLI. Requires glab installed at /opt/homebrew/bin/glab and must be run from a git directory with a GitLab remote.",
+  "author": {
+    "name": "yjhjstz",
+    "url": "https://github.com/yjhjstz"
+  }
+}
