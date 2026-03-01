@@ -1,0 +1,9 @@
+{
+  "name": "macos-tools",
+  "version": "1.0.0",
+  "description": "macOS utility commands for Claude Code. Requires macOS with Dictation enabled.",
+  "author": {
+    "name": "yjhjstz",
+    "url": "https://github.com/yjhjstz"
+  }
+}

@@ -14,6 +14,14 @@
       "source": "./plugins/gitlab-skills",
       "homepage": "https://github.com/yjhjstz/cc-skills/tree/main/plugins/gitlab-skills",
       "tags": ["gitlab", "ci-cd", "merge-request", "devops"]
+    },
+    {
+      "name": "macos-tools",
+      "description": "macOS utility commands: activate dictation/speech recognition and more",
+      "category": "productivity",
+      "source": "./plugins/macos-tools",
+      "homepage": "https://github.com/yjhjstz/cc-skills/tree/main/plugins/macos-tools",
+      "tags": ["macos", "dictation", "speech"]
     }
   ]
 }
